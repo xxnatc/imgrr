@@ -66,7 +66,7 @@ gulp.task('webpack:test', () => {
 });
 
 gulp.task('karma', ['webpack:test'], (done) => {
-  // added set timeout to avoid webpack delay
+  // added set timeout to avoid problems with webpack lag
   setTimeout(() => {
     new KarmaServer({
       configFile: __dirname + '/karma.conf.js',
