@@ -1,0 +1,10 @@
+<form data-ng-submit="formSubmit(newImage)" class="image-form">
+  <fieldset>
+    <legend>Submit an image</legend>
+    <label for="image-url">Image URL:</label>
+    <input data-ng-model="newImage.url" type="url" name="image-url" placeholder="Image URL">
+    <label for="image-caption">Caption:</label>
+    <input data-ng-model="newImage.caption" type="text" name="image-caption" placeholder="Caption">
+    <button type="submit" name="submit">Submit</button>
+  </fieldset>
+</form>

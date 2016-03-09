@@ -1,0 +1,54 @@
+header {
+  background-color: $color-lime;
+  color: $color-base-grey;
+  h1 {
+    color: $color-base-grey;
+    margin: 10px 0px;
+  }
+  p {
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+}
+
+.image-form {
+  color: $color-lime;
+  fieldset {
+    border: 1px solid $color-lime;
+    border-radius: 3px;
+    padding: 18px 12px;
+  }
+  legend {
+    font-family: 'Fjalla One', sans-serif;
+    padding: 6px 10px;
+    border: 1px solid $color-lime;
+    border-radius: 3px;
+    background-color: $color-lime;
+    color: $color-base-grey;
+  }
+}
+
+.gallery {
+  margin: 18px -10px auto -10px;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.gallery-item {
+  background-color: $color-blue-grey;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 16px;
+  text-align: center;
+  font-size: 0.9rem;
+  img {
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 12px;
+  }
+}

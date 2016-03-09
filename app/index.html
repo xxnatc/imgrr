@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Imgrrrr</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body data-ng-app="imgrrApp" data-ng-controller="HomeController" data-ng-init="loadAll()">
+    <header>
+      <h1>imgrrrr</h1>
+      <p>The awesome image database with {{images.length}} user-submitted images</p>
+    </header>
+
+    <main>
+      <section class="submission">
+        <submission-form
+          data-new-image="newImage"
+          data-form-submit="postNew(newImage)"
+        ></submission-form>
+      </section>
+
+      <section class="gallery">
+        <image-display data-ng-repeat="image in images" data-image-data="image"></image-display>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="bundle.js"></script>
+  </body>
+</html>
