@@ -6,7 +6,7 @@ const mocha = require('gulp-mocha');
 const KarmaServer = require('karma').Server;
 
 gulp.task('lint', () => {
-  return gulp.src(['**/*.js', '!**/node_modules/*', '!**/build/*'])
+  return gulp.src(['**/*.js', '!**/node_modules/*', '!**/build/*', '!**/*bundle.js'])
     .pipe(eslint(__dirname + '/.eslintrc'))
     .pipe(eslint.format());
 });

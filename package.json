@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "gulp test",
-    "start": "node server"
+    "start": "gulp build:dev && node server"
   },
   "keywords": [],
   "author": "",
