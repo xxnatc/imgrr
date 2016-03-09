@@ -47,4 +47,14 @@ describe('Images router', () => {
         done();
       });
   });
+
+  it('should handle a 404', (done) => {
+    request('localhost:' + testPort)
+      .get('/dne')
+      .end((err, res) => {
+        expect(res).to.have.status(404);
+        expect(res.body.msg).to.eql('Page not found');
+        done();
+      });
+  });
 });
